@@ -1,0 +1,12 @@
+{
+	"acknowledged-issue-numbers": [34892],
+	"availability-zones:account=173165656583:region=eu-central-1": [
+		"eu-central-1a",
+		"eu-central-1b",
+		"eu-central-1c"
+	],
+	"hosted-zone:account=173165656583:domainName=cloud.runlevel0.me:region=eu-central-1": {
+		"Id": "/hostedzone/Z03480211BF75M0RLAQ63",
+		"Name": "cloud.runlevel0.me."
+	}
+}
