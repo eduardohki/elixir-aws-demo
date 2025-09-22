@@ -38,8 +38,9 @@ const envConfig: EnvConfig = {
 		accountId: "000000000000",
 		region: "eu-central-1",
 		tags: {
+			Application: "TodoApp",
 			Environment: "dev",
-			Owner: "product",
+			Owner: "https://github.com/elixir-munich",
 		},
 		vpc: {
 			maxAzs: 2,
@@ -71,8 +72,9 @@ const envConfig: EnvConfig = {
 		accountId: "111111111111",
 		region: "eu-central-1",
 		tags: {
+			Application: "TodoApp",
 			Environment: "prod",
-			Owner: "product",
+			Owner: "https://github.com/elixir-munich",
 		},
 		vpc: {
 			maxAzs: 3,
