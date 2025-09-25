@@ -2,6 +2,24 @@
 
 This is an example Elixir application showcasing how it can be deployed to AWS using CDK and ECS Fargate.
 
+**Resources deployed via CDK:**
+
+- Container Image
+- VPC
+- ECS Cluster + Service + Task Definition + Basic Auto Scaling Rules
+- RDS PostgreSQL Instance
+- PostgreSQL Database, Schema and User/Role for the Application
+- Secrets for Admin and Application Database Credentials
+- DNS Records (requiring a pre-existing Route53 Hosted Zone)
+- Application Load Balancer with TLS Certificate
+
+**What it doesn't include:**
+
+- Support for Distributed Erlang (EPMD + AWS Cloud Map for Service Discovery)
+- Advanced monitoring with CloudWatch Container Insights and X-Ray Tracing
+- Dedicated KMS Keys (CMK) for encrypting Secrets, Logs and RDS Databases
+- Infra-level testing (_e.g._ if all required env vars are present in CDK)
+
 ## Requirements
 
 - AWS CLI
